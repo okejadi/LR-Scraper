@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light Detective</title>
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="css?family=work-sans:400,600" rel="stylesheet">
+  <script type="module" crossorigin="" src="assets/index-DTPTfDNm.js"></script>
+  <link rel="stylesheet" crossorigin="" href="assets/index-CmTl9SDi.css">
+</head>
+
+<body>
+  <div id="header-image"></div>
+  <div class="wrapper">
+    <div class="headline">
+      <h1>
+        <a href="index.htm">Light Detective</a>
+      </h1>
+      <span class="subheadline">Lightroom Data Viewer</span>
+    </div>
+    <div id="drop">
+      <form id="image-upload">
+        <div class="drop-text">Drop image</div>
+        <div class="upload">
+          Or upload
+          <input type="file" id="image-input" class="hidden" accept="image/jpeg,image/webp,image/png">
+          <label class="button" for="image-input">Choose file</label>
+        </div>
+      </form>
+      <p>to extract information</p>
+    </div>
+    <div class="disclaimer">
+      <center>Disclaimer</center>
+      <h2>Pay creators for their work.</h2>
+      <p>
+        This tool is intended to for recovering your edit settings and the educational purpose of helping you
+        understand the Lightroom settings behind a certain picture.
+      </p>
+      <p>
+        The download function has been disabled for two reasons:
+      <ul>
+        <li>People misused it as a tool to try and pirate presets</li>
+        <li>If you really need that preset back you'll be willing to recreate it manually</li>
+      </ul>
+      Long story short: People took it for granted and Adobe keeps changing the XMP format, so i'll use my personal time
+      for purposes that bring me more happiness than people on reddit begging for free stuff.
+      
+    </div>
+    <div class="result-container hidden">
+      <div id="result">
+        <h2>Results</h2>
+        <div>
+          <button class="hidden button download">Download preset ↓</button>
+        </div>
+        <a href="index.htm" class="retry">Try another file ↻</a>
+        <div class="meta"></div>
+        <div class="settings"></div>
+      </div>
+    </div>
+    <footer>
+      &copy; 2022 by Leif Niemczik -
+      <a href="https://github.com/leifniem/LightDetective" target="_blank" rel="noreferrer noopener">Github</a>
+      - Header Photos from
+      <a href="https://unsplash.com" target="_blank" rel="noreferrer noopener">
+        Unsplash
+      </a>
+    </footer>
+  </div>
+</body>
+
+</html>
